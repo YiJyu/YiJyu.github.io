@@ -49,6 +49,13 @@
   </head>
 
   <body>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0&appId=431831897452175&autoLogAppEvents=1"
+    ></script>
     <script>
       window.fbAsyncInit = function() {
         FB.init({
@@ -126,7 +133,14 @@
         </div>
       </nav>
     </div>
-
+    <div
+      class="fb-login-button"
+      data-width=""
+      data-size="medium"
+      data-button-type="continue_with"
+      data-auto-logout-link="false"
+      data-use-continue-as="false"
+    ></div>
     <script>
       $(window).scroll(function() {
         $('nav').toggleClass('scrolled', $(this).scrollTop() > 530);
