@@ -23,9 +23,11 @@
       * {
         /* border: solid 1px; */
       }
+
       body {
         height: 1500px;
       }
+
       .bg {
         background-image: url('img/view.jpg');
         height: 600px;
@@ -33,10 +35,12 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
+
       .bg-color {
         transition: 750ms ease;
         background-color: transparent !important;
       }
+
       .bg-color.scrolled {
         background-color: #0d3a59 !important;
         color: white;
@@ -45,6 +49,20 @@
   </head>
 
   <body>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0"
+    ></script>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v4.0"
+    ></script>
     <div class="container-fluid m-0 p-0 bg">
       <nav class="navbar navbar-expand-lg navbar-light bg-color fixed-top">
         <a class="navbar-brand" href="#">
@@ -98,7 +116,22 @@
         </div>
       </nav>
     </div>
-
+    <div
+      class="fb-login-button"
+      data-width=""
+      data-size="large"
+      data-button-type="continue_with"
+      data-auto-logout-link="false"
+      data-use-continue-as="false"
+    ></div>
+    <div
+      class="fb-login-button"
+      data-width=""
+      data-size="large"
+      data-button-type="continue_with"
+      data-auto-logout-link="false"
+      data-use-continue-as="false"
+    ></div>
     <script>
       $(window).scroll(function() {
         $('nav').toggleClass('scrolled', $(this).scrollTop() > 530);
