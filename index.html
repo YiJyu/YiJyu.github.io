@@ -117,8 +117,9 @@
       data-button-type="continue_with"
       data-auto-logout-link="false"
       data-use-continue-as="false"
+      data-scope="public_profile,email"
+      data-onlogin="checkLoginState();"
     ></div>
-    >>>>>>> aaf5ce89628ce6b7299ea76eb74e3a615a618fc8
     <script>
       $(window).scroll(function() {
         $('nav').toggleClass('scrolled', $(this).scrollTop() > 530);
